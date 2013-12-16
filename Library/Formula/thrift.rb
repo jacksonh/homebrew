@@ -47,6 +47,7 @@ class Thrift < Formula
                           "--libdir=#{lib}",
                           *exclusions
     ENV.j1
+    ENV['CXXFLAGS'] = "-std=c++11"
     system "make"
     system "make install"
   end
