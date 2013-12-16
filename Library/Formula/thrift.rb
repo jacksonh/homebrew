@@ -20,6 +20,7 @@ class Thrift < Formula
   option "with-php", "Install Php binding"
 
   depends_on 'boost'
+  depends_on 'libevent'
   depends_on :python => :optional
 
   # Includes are fixed in the upstream. Please remove this patch in the next version > 0.9.0
